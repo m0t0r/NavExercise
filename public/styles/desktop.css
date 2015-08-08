@@ -18,13 +18,20 @@
     display: none;
   }
 
-  nav ul {
+  .menu {
     display: block;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
   }
 
   nav > ul {
+    position: static;
     background: #ec008c;
     min-width: 968px;
+    margin: 0;
   }
 
   nav ul:after {
@@ -35,18 +42,33 @@
 
   nav ul li {
     float: left;
+    position: static;
+    background: none;
+  }
+
+  nav ul li li {
+    background: #fff;
+  }
+
+  nav ul li.has-sub-menu:after {
+    background: none;
   }
 
   nav ul li a {
     display: block;
     color: #fff;
     padding: 12px 24px;
-    font: 21px/48px HUGEAvantGardeBold;
   }
 
   nav ul li:hover > a {
     background: #fff;
     color: #ec008c;
+  }
+
+  ul li:hover ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   nav ul ul {
@@ -56,6 +78,32 @@
     background: #fff;
     z-index: 2;
     transition: all .2s linear;
+  }
+
+  nav ul ul li {
+    float: none;
+    position: relative;
+  }
+
+  nav ul ul li:hover a {
+    background: #eee;
+  }
+
+  nav ul ul li a {
+    font: 16px/48px Galaxie;
+    padding: 0 24px;
+    color: #000;
+  }
+
+  nav > ul > li:first-child a {
+    margin: 0;
+  }
+
+  nav ul ul li:first-child a {
+    margin-top: 12px;
+  }
+  nav ul ul li:last-child a {
+    margin-bottom: 12px;
   }
 
 
