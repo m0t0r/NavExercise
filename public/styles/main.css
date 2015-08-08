@@ -1,5 +1,57 @@
 @import "fonts.css";
 
 body {
-  background: #ccc;
+  font: 14px/24px Galaxie;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*************** NAV STYLES ***************/
+
+.huge-logo {
+  display: none;
+}
+
+.menu-trigger {
+  background: #ec008c url('../images/toggle-open.svg') no-repeat;
+  height: 60px;
+}
+
+nav ul {
+  background: #ec008c;
+}
+
+nav ul {
+  display: none;
+}
+
+
+
+/*************** SECTION STYLES ***************/
+
+article section {
+  position: relative;
+}
+
+section header {
+  position: relative;
+}
+
+section header img {
+  max-width: 100%;
+}
+
+section h1 {
+  position: static;
+  margin: 50px 24px;
+  text-align: left;
+  font: 44px/48px HUGEAvantGardeBold;
+  letter-spacing: -0.06em;
+  color: #000;
+}
+
+.container {
+  margin: 0 24px;
 }

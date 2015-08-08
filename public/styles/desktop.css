@@ -1,15 +1,83 @@
 @media screen and (min-width: 768px){
 
-  h1 {
+  body {
+    font: 24px/36px Galaxie;
+  }
+
+  /*************** NAV STYLES ***************/
+
+  .huge-logo {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 24px;
+    padding: 24px 48px 24px 24px;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav > ul {
+    background: #ec008c;
+    min-width: 968px;
+  }
+
+  nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 12px 24px;
+    font: 21px/48px HUGEAvantGardeBold;
+  }
+
+  nav ul li:hover > a {
+    background: #fff;
+    color: #ec008c;
+  }
+
+  nav ul ul {
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    transition: all .2s linear;
+  }
+
+
+
+  /*************** SECTION STYLES ***************/
+
+  section h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: 0;
-    font: 20vmin/1 HUGEAvantGardeBold;
+    font: 120px/132px HUGEAvantGardeBold;
     letter-spacing: -0.06em;
     text-align: center;
+    color: #fff;
   }
-  
+
+  .container {
+    width: 968px;
+    margin: 60px auto 0;
+  }
+
 }
