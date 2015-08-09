@@ -11,14 +11,27 @@ a {
 /*************** NAV STYLES ***************/
 
 .huge-logo {
-  display: none;
+  position: absolute;
+  width: 50px;
+  top: 20px;
+  left: -74px;
+  transition: all .3s ease-in-out;
 }
 
 .menu-trigger {
   display: block;
-  background: #ec008c url('../images/toggle-open.svg') no-repeat;
+  background: #ec008c;
+}
+
+.menu-icon {
+  display: block;
+  background: url('../images/toggle-open.svg') no-repeat;
   height: 60px;
+  margin-top: -5px;
+  padding-bottom: 5px;
+  margin-left: 0;
   cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
 #menu-trigger {
@@ -31,6 +44,15 @@ a {
 
 #menu-trigger:checked ~ .content {
   left: calc(100% - 72px);
+}
+
+#menu-trigger:checked ~ header .huge-logo {
+  left: 24px;
+}
+
+#menu-trigger:checked ~ .menu-trigger .menu-icon {
+  background: url('../images/toggle-close.svg') no-repeat;
+  margin-left: calc(100% - 72px);
 }
 
 .menu {

@@ -7,6 +7,7 @@
   /*************** NAV STYLES ***************/
 
   .huge-logo {
+    position: static;
     display: block;
     float: left;
     width: 60px;
@@ -19,6 +20,7 @@
   }
 
   .menu {
+    position: static;
     display: block;
     top: auto;
     right: auto;
