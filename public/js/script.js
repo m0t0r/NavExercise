@@ -84,6 +84,7 @@
       select('.menu-icon').addEventListener('click', function(e) {
         select('body').classList.toggle('overlay');
         _closePreviousMenuItem();
+        select('.content').removeAttribute('style');
       });
     }
 
