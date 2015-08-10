@@ -27,6 +27,7 @@
     bottom: auto;
     left: auto;
     width: 100%;
+    overflow: initial;
   }
 
   nav > ul {
@@ -60,6 +61,7 @@
     display: block;
     color: #fff;
     padding: 12px 24px;
+    transition: all .3s ease-in-out;
   }
 
   nav ul li:hover > a {
@@ -67,7 +69,12 @@
     color: #ec008c;
   }
 
-  ul li:hover ul {
+  nav ul li > a.active {
+    background: #fff;
+    color: #ec008c;
+  }
+
+  nav ul li ul.open {
     display: block;
     visibility: visible;
     opacity: 1;
@@ -108,7 +115,9 @@
     margin-bottom: 12px;
   }
 
-
+  nav ul li:last-child ul li:last-child {
+    margin: 0;
+  }
 
   /*************** SECTION STYLES ***************/
 
@@ -130,4 +139,7 @@
     margin: 60px auto 0;
   }
 
+  footer {
+    display: none;
+  }
 }
